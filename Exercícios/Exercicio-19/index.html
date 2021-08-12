@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 19</h1>
+    <img src="/Exercícios/Exercicio-19/exercicio-19.PNG" alt="ImagemDaQuestao">
+    <p>O código ficou dessa forma: <code>
+        from statistics import * <br>
+        tipoMedia = int(input('Digite qual tipo de média deseja calcular: ')) <br>
+        soma = 0 <br>
+        index = 0 <br>
+        if(tipoMedia == 1): <br>
+            for i in range(1, 4): <br>
+                nota = int(input(f'Digite sua nota #{i}: ')) <br>
+                soma += nota <br>
+                index += 1 <br>
+            print(f' A média aritmética das notas é: {soma / index}') <br>
+        elif(tipoMedia == 2): <br>
+            for i in range(1, 4): <br>
+                nota = int(input(f'Digite sua nota #{i}: ')) <br>
+                if(i == 1 or i == 2): <br>
+                    soma += nota * 3 <br>
+                else: <br>
+                    soma += nota * 4 <br>
+            print(f' A média ponderada é {soma / (3 + 3 + 4)}') <br>
+        elif(tipoMedia == 3): <br>
+            arrayNotas = [] <br>
+            for i in range(1, 4): <br>
+                nota = int(input(f'Digite sua nota #{i}: ')) <br>
+                arrayNotas.append(nota) <br> 
+            print(harmonic_mean(arrayNotas)) <br>
+    </code></p>
+ 
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 14</h1>
+    <h2>Escreva um algoritmo que leia o código de um aluno e suas três notas. Calcule a média 
+        ponderada do aluno, considerando que o peso para a maior nota seja 4 e para as duas 
+        restantes, 3. Mostre o código do aluno, suas três notas, a média calculada e uma 
+        mensagem "APROVADO" se a média for maior ou igual a 5 e "REPROVADO" se a média 
+        for menor que 5.</h2>
+    <p>O código ficou dessa forma: <code>
+        const Aluno = { <br>
+            codAluno: 1030213012, <br>
+            nome: 'Gabriel', <br>
+            notas: [10, 9, 3]  <br>
+        }; <br>
+        
+        let maiorNota = 0; <br>
+        let soma = 0; <br>
+        
+        for(nota of Aluno.notas){ <br>
+            if(nota > maiorNota){ <br>
+                maiorNota = nota <br>
+                soma += nota * 4; <br>
+            } else { <br>
+                soma += nota * 3; <br>
+            } <br>
+        } <br>
+        const media = soma / (4 + (3 * 2)) <br>
+        console.log(`Código ${Aluno.codAluno}, notas ${Aluno.notas[0]}, ${Aluno.notas[1]}, ${Aluno.notas[2]}, <br> média ${media} foi ${media >= 5 ? "APROVADO" : "Reprovado"}`) <br>
+        Resultado: Código 1030213012, notas 10, 9, 3, média 7.6 foi APROVADO 
+    </code></p>
+
+    
+</body>
+</html>

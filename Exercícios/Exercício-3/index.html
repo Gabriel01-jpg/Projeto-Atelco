@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 540px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Exercício 03</h1>
+    <h2>Questão 03. Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
+        mostre-a expressa apenas em dias.</h2>
+    <p>O código ficou dessa forma: <code>
+        const valoresIdade = { 
+            ano: 25,
+            meses: 5,
+            dias: 10
+        };
+        const anoBissexto = Math.floor(valoresIdade.ano / 4)
+        const valoresemDias = ((valoresIdade.ano * 365) + anoBissexto) + (valoresIdade.meses * 30) + valoresIdade.dias
+        console.log(valoresemDias + 'dias')
+
+        <br> Resultado: 9291 dias
+    </code></p>
+
+    
+</body>
+</html>

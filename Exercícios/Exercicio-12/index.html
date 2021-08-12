@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Exercício 12</h1>
+    <h2>Elabore um algoritmo que dada a idade de um nadador classifica-o em uma das 
+        seguintes categorias: <br>
+        infantil A = 5 - 7 anos <br>
+        infantil B = 8-10 anos <br>
+        juvenil A = 11-13 anos <br>
+        juvenil B = 14-17 anos <br>
+        adulto = maiores de 18 anos */</h2>
+    <p>O código ficou dessa forma: <code>
+        const idade = 10; <br>
+
+        const categoria = idade >= 5 && idade <= 7 ? 'Infantil A' : idade >= 8 && idade <=10 ? 'Infantil B' : idade >= 11 && idade <= 13 ? 'Juvenil A' : idade >= 14 && idade <= 17 ? 'Juvenil B' : idade > 18 ? 'Adulto' : 'Não se encaixa em nenhuma categoria' <br>
+        console.log(categoria) <br>
+        Resultado: Infantil B
+    </code></p>
+
+    
+</body>
+</html>

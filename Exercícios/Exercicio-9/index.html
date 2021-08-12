@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Exercício 09</h1>
+    <h2>Questão 09. Calcule a média aritmética das 3 notas de um aluno e mostre, além do valor da média, 
+        uma mensagem de "Aprovado", caso a média seja igual ou superior a 6, ou a mensagem 
+        "reprovado", caso contrário.</h2>
+    <p>O código ficou dessa forma: <code>
+        const notasAluno = { <br>
+            nota1: 9, <br>
+            nota2: 8, <br>
+            nota3: 6 <br>
+        }; <br>
+        let media =  (notasAluno.nota1 + notasAluno.nota2 + notasAluno.nota3) / 3 <br>
+        console.log(media.toFixed(2)) <br>
+        if (media >= 6){ <br>
+            console.log('Aprovado') <br>
+        } else { <br> 
+            console.log('Reprovado')<br>
+        } <br>
+        Resultado: 7.67 Aprovado
+    </code></p>
+
+    
+</body>
+</html>

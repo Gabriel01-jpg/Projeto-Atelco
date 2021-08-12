@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Exercício 06</h1>
+    <h2>Questão 06. Faça um algoritmo que leia o tempo de duração de um evento em uma fábrica expressa 
+        em segundos e mostre-o expresso em horas, minutos e segundos.</h2>
+    <p>O código ficou dessa forma: <code>
+        const segundos = 95467 <br>
+        const horas = Math.floor(segundos / 3600) <br>
+        const minutos = Math.floor(segundos / 60) - (60 * horas) <br>
+        restoSegundos = segundos % 60 <br>
+        console.log(`${segundos} segundos são: ${horas} hora(s), ${minutos} minutos e ${restoSegundos}  segundos`) <br>
+        Resultado: 95467 segundos são: 26 hora(s), 31 minutos e 7 segundos
+    </code></p>
+
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 16</h1>
+    <h2>O cardápio de uma lancheria é o seguinte: <br>
+        Especificação Código Preço <br>
+        Cachorro quente 100 || 1,20 <br>
+        Bauru simples 101 || 1,30 <br>
+        Bauru com ovo 102 || 1,50 <br>
+        Hambúrger 103 || 1,20 <br>
+        Cheeseburguer 104 || 1,30 <br>
+        Refrigerante 105 || 1,00 <br>
+         
+        Escrever um algoritmo que leia o código do item pedido, a quantidade e calcule o valor a ser  <br>
+        pago por aquele lanche. Considere que a cada execução somente será calculado um item.</h2>
+    <p>O código ficou dessa forma: <code>
+        itemPedido = str(input('Digite o código do pedido: ')) <br>
+        quantidade = int(input('Quantos você quer? ')) <br>
+        valorCalculado = 0   <br>
+
+        if(itemPedido == '100'): <br>
+            valorCalculado = 1.20 * quantidade <br>
+            print(f'O seu pedido deu: {valorCalculado}')<br>
+        elif(itemPedido == '101'): <br>
+            valorCalculado = 1.30 * quantidade <br>
+            print(f'O seu pedido deu: {valorCalculado}') <br>
+        elif(itemPedido == '102'): <br>
+            valorCalculado = 1.50 * quantidade <br>
+            print(f'O seu pedido deu: {valorCalculado}') <br>
+        elif(itemPedido == '103'): <br>
+            valorCalculado = 1.20 * quantidade <br>
+            print(f'O seu pedido deu: {valorCalculado}') <br>
+        elif(itemPedido == '104'): <br>
+            valorCalculado = 1.30 * quantidade <br>
+            print(f'O seu pedido deu: {valorCalculado}') <br>
+        elif(itemPedido == '105'): <br> 
+            valorCalculado = 1 * quantidade <br>
+            print(f'O seu pedido deu: {valorCalculado}') <br>
+        else:  <br>
+            print('Informe um código entre 100 e 105') <br>
+
+    </code></p>
+
+    
+</body>
+</html>

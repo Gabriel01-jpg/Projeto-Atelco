@@ -1,0 +1,1144 @@
+/* //////////////// RESETS DO CSS  //////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #fff;
+}
+
+a {
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+
+/* //////////////// CABEÇALHO  //////////////*/
+.mobile{
+    display: none;
+}
+
+.content-header{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navigation {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 43px;
+}
+
+/* ///////////////// */
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+    height: 43px;
+    transition: 2s;
+}
+
+.navigation ul a {
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
+    opacity: .8;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    padding: 10px;
+}
+
+
+.navigation ul a i {
+    font-size: 2.5rem;
+    color: #f5f5f7;
+    
+}
+
+.navigation ul a .icon-search{
+    font-size: 1.5rem;
+}
+
+
+.navigation ul a:hover{
+    opacity: 1;
+    color: white;
+}
+/* STYLE CAMPO BUSCA */
+
+
+
+
+
+
+/* MUDAR NAVIGATION QUANDO CLICKAR */
+.navigation .search i, .navigation .search a {
+    color: #86868b;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navigation .search i {
+    font-size: 25px;
+    margin-right: 5px;
+    position: relative;
+    top: 2.4px;
+}
+
+.navigation .search {
+    opacity: 0;
+    visibility: 0;
+    transform: translateX(500px);
+    
+}
+
+.navigation.search-nav .search {
+    transition: 1s;
+    display: flex;
+    height: 43px;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 1;
+    visibility: 1;
+    transform: translateX(0);
+    
+}
+
+
+/* ////////  MUDANDO NAVIGATION /////////*/
+nav.search-nav ul {
+    transition: 1s;
+    opacity: 0;
+    visibility: 0;
+    display: none;
+    transition: 2s;
+}
+
+
+nav.search-nav {
+    max-width: 650px;
+}
+nav.search-nav div input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    height: 100%;
+    font-size: 17px;
+    font-family: var(--font-family);
+}
+
+/* /////// MOVIMENTACAO DO HEADER /////// */
+.transition-ul {
+    transform: translateX(-60px);
+    opacity: 0;
+    visibility: 0;
+}
+
+/* FUNDO PRETO QUANDO CLICKA */
+.search-curtain{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 997;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/* ///////////  CAIXA DE TEXTO - BRANCA  /////////////// */
+.text-box {
+    position: fixed;
+    top: 42px;
+    left: 50%;
+    width: 660px;
+    height: 230px;
+    background-color: white;
+    z-index: 998;
+    margin-left: -325px;
+    border-radius: 0 0 25px 25px;
+}
+
+
+/* ///////////// BLOQUEAR SCROLL ///////// */
+.top-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+/* //////////////// CONTEUDOS DO MAIN  //////////////*/
+
+/* CONTEUDO DO HOME PARA TELAS > 1024px; */
+
+.first-content {
+    height: 683px;
+}
+.content-main-home {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #f5f5f7;
+}
+
+.content-main-home p {
+    font-size: 14px;
+    color: #1d1d1f;
+    opacity: .9;
+    padding: 1rem 0;
+}
+
+.content-main-home p a{
+    text-decoration: none;
+    color: #06c;
+    opacity: .8;
+}
+
+.content-main-home p a:hover{
+    text-decoration: underline;
+}
+
+.main-home-image {
+    background-image: url('../images/desktop/first-content/iphone_12_home_extra-large.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 736px;
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.main-home {
+    margin-top: 5px;
+    display: grid;
+    justify-content: center;
+    padding-top: 2rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+.titles {
+    margin-top: 20px;
+}
+
+.titles h2 {
+    letter-spacing: 0.2px;
+    font-weight: bold 500;
+    font-size: 3.5rem;
+}
+
+.titles h3 {
+    font-weight: 400;
+    font-size: 1.65rem;
+    letter-spacing: .004em;
+}
+
+.links a {
+    position: relative;
+    text-decoration: none;
+    color: #06c;
+    margin-left: 20px;
+    font-size: 1.41rem;
+    /* font-family: 'Roboto', sans-serif; */
+    letter-spacing: -0.5px;
+    margin: 20px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    text-decoration-color: #06c;
+}
+
+
+/* SEGUNDA PARTE DO MAIN HOME */
+
+.second-content {
+    margin-top: 15px;
+    height: 650px;
+    background-color: black;
+}
+
+
+.second-content .main-home h2, .second-content .main-home h3 {
+    color: white;
+}
+ 
+/* LINKS */
+
+.links a {
+    font-family: 'Roboto', sans-serif;
+    color: #005bcc;
+    opacity: 0.8;
+}
+
+.second-home-image .main-home .links a, .third-home-image .main-home .links a {
+    color: #2997ff;
+    opacity: .9;
+}
+
+.second-home-image {
+    background-image: url('../images/desktop/second-contet/iphone12-large-image.jpg');
+    background-size: 3000px 800px;
+    background-position: bottom;
+    height: 100%;
+    width: 100%;
+}
+
+/* TERCEIRA PARTE*/
+
+.third-content {
+    margin-top: 15px;
+    height: 650px;
+    background-color: black;
+}
+.third-content .main-home h2, .third-content .main-home h3 {
+    color: white;
+}
+
+.third-home-image {
+    background-image: url('../images/desktop/third-content/hero_ipad_extralarge.jpg');
+    margin-top: 10px;
+    background-size: 3000px 750px;
+    background-position: bottom;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+/* Quarto Elemento */
+
+.fourth-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+/* .content {
+    margin-left: .8rem;
+    margin-right: .8rem;
+} */
+
+.fourth-content > div {
+    height: 620px;
+   /*  background-color: blue; */
+   margin-left: 7px;
+   margin-right: 7px;
+   margin-top: 13px;
+}
+
+.fourth-content .main-home {
+    /* padding-top: 45px; */
+    margin-top: 0;
+    gap: 0.8rem;
+}
+
+/* ///// SECAO iMac //////// */
+.imac-section-image {
+    background-image: url(../images/desktop/imac-extra-large.jpg);
+    background-size: 1262px 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.imac-section-image .links a{
+    font-size: 1.2rem;
+    
+}
+
+.imac-section-image .titles h4 {
+    font-size: 2.5rem;
+}
+.imac-section-image .titles h5 {
+    margin-top: 3px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* //// SESSAO SMARTWATCH ///////////*/
+.clock-section-image {
+    background-image: url(../images/desktop/fourth-content/watch.jpg);
+    background-size: 1262px 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+}
+
+.clock-section-image .links a{
+    color: #2997ff;
+    opacity: .9;
+    font-size: 1.2rem;
+    
+}
+.clock-section-image .titles .clock-logo-image{
+    background-image: url('../images/logos/watch-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+}
+.clock-section-image .titles h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+}
+
+/* /// SESSAO DO IOS 15 ///// */
+
+.ios-section-image{
+    background-image: url(../images/desktop/ios15-large.jpg);
+    background-size: 1262px 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+}
+
+.ios-section-image .links a{
+    font-size: 1.2rem;
+    
+}
+.ios-section-image .titles h4 {
+    font-size: 2.5rem;
+}
+.ios-section-image .titles h5 {
+    margin-top: 3px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/*  ///////////// AIR TAG SECTION /////////// */
+.airtag-section-image {
+    background-image: url(../images/desktop/airtag-large.jpg);
+    background-size: 1262px 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+}
+
+.airtag-section-image .links a{
+    font-size: 1.2rem;
+    
+}
+.airtag-section-image .titles h4 {
+    font-size: 2.5rem;
+}
+.airtag-section-image .titles h5 {
+    margin-top: 4px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+/* ////////////// MUSIS SECTION ////////////////*/
+
+.music-section-image {
+    background-image: url(../images/desktop/music-large.jpg);
+    background-size: 1262px 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+}
+
+.music-section-image .links a{
+    color: white;
+    opacity: 1;
+    font-size: 1.2rem;
+    
+}
+.music-section-image .links a:hover{
+    text-decoration-color: white;
+}
+
+.music-section-image .titles {
+    margin-top: 0;
+}
+
+.music-section-image .titles h4 {
+    color: white;
+    font-size: 3rem;
+}
+
+.fourth-content .main-home .titles h4.icon-apple:before {
+    font-size: 70px;
+    position: relative;
+    top: 15px;
+}
+
+.fourth-content .tv-section-image .main-home  .titles h4.icon-apple:before {
+    top: 18px;
+}
+
+.music-section-image .titles h5 {
+    margin-top: 7px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+sup {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    position: absolute;
+    font-weight: 500;
+}
+
+
+/* //////////// TV SECTION */
+.tv-section-image {
+    background-image: url(../images/desktop/films-large.jpg);
+    background-size: 1262px 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+}
+
+.tv-section-image .links a{
+    color: white;
+    opacity: 1;
+    font-size: 1.2rem;
+    
+}
+.tv-section-image .links a:hover{
+    text-decoration-color: white;
+}
+
+.tv-section-image .titles {
+    margin-top: 0;
+}
+.tv-section-image .titles h4 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.tv-section-image .titles h5 {
+    margin-top: 7px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* /////////////// LOGOS ////////////// */
+
+.logos {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+}
+
+.see {
+    margin-top: 50px;
+    width: 30%;
+    justify-self: end;
+    background-image: url(../images/logos/see.png);
+    /* width: 100% */;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+.ted-lasso {
+    background-image: url(../images/logos/ted-lasso.png);
+    height: 60px;
+    background-repeat: no-repeat;
+}
+.the-morning {
+    background-image: url(../images/logos/the-morning-show.png);
+    justify-self: flex-end;
+    width: 40%;
+    height: 40px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    background-repeat: no-repeat;
+}
+.the-foundation {
+    margin-top: -10px;
+    background-image: url(../images/logos/the-foundation.png);
+    /* width: 100% */;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+
+/* ////////////////// FOOTER /////////////////// */
+
+#footer {
+    margin-top: 15px;
+    background-color: #f5f5f7;
+}
+
+.toggle-footer {
+    display: none;
+}
+
+.header-footer {
+    padding-top: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.header-footer.border, .header-footer.border-top{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.header-footer h6 {
+    font-weight: 500;
+    font-size: 13px;
+    color: #515154;
+    opacity: 0.5;
+}
+.header-footer h6 a {
+    text-decoration: none;
+    color: #06c;
+}
+
+.links-footer{
+    display: flex; 
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links-footer div {
+    /* margin: 30px; */
+    margin-top: 0;
+    max-width: 150px;
+}
+
+.links-footer div ul{
+    margin-top: 30px;
+}
+
+.links-footer div ul p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #252525;
+    opacity: 0.9;
+}
+
+.links-footer div ul li{
+    list-style-type: none;
+    margin-top: 7px;
+}
+
+.links-footer div ul li a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #515154;
+    font-weight: 400;
+    opacity: 0.7; 
+}
+
+.links-footer div ul li a:hover{
+    text-decoration: underline;
+}
+
+/* // copyright //////*/
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright.header-footer{
+    padding-top: 10px;
+}
+
+.copyright p {
+    font-size: 13px;
+    color: #515154;
+    font-weight: 400;
+    opacity: 0.7; 
+}
+
+.politicas {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.politicas.header-footer{
+    padding-top: 5px;
+}
+
+.politicas p:not(:first-child) {
+    margin: 0 10px 5px 0px;
+    font-size: 13px;
+}
+
+.politicas p:nth-child(1) {
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.politicas p:nth-child(4) a{
+    border-right: none;
+}
+.politicas a {
+    text-decoration: none;
+    color: #252525;
+    font-weight: 400;
+    opacity: 0.8; 
+    border-right: 1px solid #d2d2d7;
+    padding-right: 7px;
+}
+
+
+
+/* .links p {
+    display: inline;
+    cursor: pointer;
+} */
+
+/* .main-home a::after{
+    content: '';
+    width: 0;
+    position: absolute;
+    height: 2.2px;
+    bottom: -1px;
+    left: 0;
+    background-color: #06c;
+    transition: width .3s;
+}
+
+.main-home a:hover::after{
+    width: 100%;
+} */
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1366px) and (min-width: 621px) {
+    
+    .first-content {
+        background-color: #FBFBFD;
+    }
+    .first-content .main-home-image {
+        background-image: url('../images/desktop/first-content/iphone_12_large.jpg');
+        background-size: 3010px 624px;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* height: 736px; */
+        position: absolute;
+        top: 45px;
+        z-index: 1;
+    
+    }
+    .titles {
+        z-index: 2;
+    }
+    .links {
+        z-index: 2;
+    }
+    /* ////// SEGUNDA IMAGEM /////////// */
+
+
+    .second-content {
+        height: 624px;
+    }
+
+    .second-home-image {
+        background-image: url('../images/desktop/second-contet/iphone-12-large.jpg');
+        background-size: 3011px 624px;
+        background-position: bottom;
+        height: 100%;
+        width: 100%;
+    }
+
+    .third-content {
+        height: 624px;
+    }
+
+    .third-home-image {
+        background-image: url('../images/desktop/third-content/imac-large.jpg');
+        background-position: bottom;
+        background-size: 3008px 624px;
+    }
+
+    /* QUARTO CONTEÚDO */
+
+    .fourth-content > div {
+        height: 580px;
+    }
+
+    .imac-section-image {
+        background-image: url(../images/desktop/fourth-content/imac-large.jpg);
+        background-size: 1262px 580px;
+    }
+
+}
+
+@media (max-width: 620px) {
+    #transition-nav, .search{
+        display: none;
+    }
+
+    
+/*  //////////////////  NAVIGATION /////////  */
+    .content-header {
+        background-color: black;
+    }
+
+    .navigation {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .navigation.show {
+        top: 0;
+        position: absolute;
+        animation: crescer 1s;
+        background-color: black;
+    }
+    .navigation.show-fixed {
+        height: 100vh;
+    }
+    
+    .navigation.show-fixed-back{
+        animation: diminuir 1s;
+    }
+
+    @keyframes crescer {
+        from {
+            heigth: 100%;
+        }
+
+        to {
+            bottom: 0;
+            height: 100vh;
+        }
+    }
+
+    @keyframes diminuir {
+        from {
+            height: 100vh;
+        }
+        to {
+            height: 20px;
+        }
+    }
+
+    .navigation.show .mobile ul li>a>i.icon-shopping-bag {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 2s;
+    }
+
+    /* .navigation.show ul#transition-nav {
+        display: flex;
+    } */
+
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+    .mobile ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .mobile ul li i.icon-navicon {
+        font-size: 1.5rem;
+    }
+    .mobile ul li i {
+        font-size: 3rem;
+    }
+    .mobile ul li i.icon-clear {
+        font-size: 1.8rem;
+        color: #fff;
+        opacity: .8;
+    }
+
+    /* .mobile-toggle .search {
+        display: flex;
+    } */
+/*  //////////////////  NAVIGATION /////////  */
+
+/*     .content-main-home {
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+    } */
+    .content-main-home p {
+       max-width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+    }
+
+    .first-content {
+        height: 548px;
+    }
+
+    .main-home-image {
+        background-image: url('../images/mobile/first-content/iphone_12_small.jpg');
+        background-size: 734px 548px;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        top: -75px;
+
+    }
+
+    .titles {
+        margin-top: 7px;
+    }
+    
+    .titles h2 {
+        font-size: 2rem;
+    }
+    
+    .titles h3 {
+        margin-top: 7px;
+        font-size: 1.2rem;
+    }
+    
+    .links a {
+        font-size: 1.28rem;
+    }
+
+/* SECOND CONTENT */
+    .second-content {
+        height: 480px;
+    }
+    .second-home-image {
+        background-image: url(../images/mobile/second-content/iphone-12-small.jpg);
+        background-size: 734px 548px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    /* THIRD-CONTENT MOBILE*/
+
+    .third-content {
+        height: 500px;
+    }
+    
+    .third-home-image {
+        background-image: url('../images/mobile/third-content/hero_ipad_pro__small.jpg');
+        margin-top: 10px;
+        background-size: 734px 548px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    
+    }
+
+    .fourth-content {
+        grid-template-columns: 1fr;
+    }
+
+    .fourth-content > div {
+        height: 510px;
+    }
+
+    .imac-section-image {
+        background-image: url(../images/mobile/fourth-content/promo_imac_small.jpg);
+        background-size: 734px 548px;
+        background-position: bottom;
+    }
+
+    /*/////////////////// TITLES DEFAULT ///// */
+    
+    .imac-section-image .titles h4, .clock-section-image .titles h4, .ios-section-image .titles h4, .airtag-section-image .titles h4, .tv-section-image .titles h4 {
+        font-size: 2rem;
+    }
+    .imac-section-image .titles h5, .ios-section-image .titles h5, .airtag-section-image .titles h5, .music-section-image .titles h5 {
+        margin-top: 0px;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .clock-section-image {
+        background-image: url(../images/mobile/fourth-content/promo_watch_series_small.jpg);
+        background-size: 734px 548px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 100%;
+    }
+
+    .ios-section-image{
+        background-image: url('../images/mobile/fourth-content/tile_ios15_small.jpg');
+        background-size: 734px 548px;
+    }
+    
+    .airtag-section-image {
+        background-image: url('../images/mobile/fourth-content/promo_airtag_small.jpg');
+        background-size: 734px 548px;
+    }
+    
+    .music-section-image {
+        background-image: url('../images/mobile/fourth-content/imusic-image-small.jpg');
+        background-size: 734px 548px;
+    }
+    
+    .music-section-image .titles h4 {
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    }
+
+    .tv-section-image {
+        background-image: url('../images/mobile/fourth-content/apple-tv-image-small.jpg');
+        background-size: 734px 548px;
+    }
+    
+    .tv-section-image .titles h5 {
+        margin-top: 7px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+        max-width: 250px;
+    }
+
+    .tv-section-image .main-home {
+        padding-top: 0;
+    }
+
+    .logos {
+        gap: 40px;
+    }
+    
+    .see {
+        margin-top: 43px;
+        width: 52%;
+    }
+    .ted-lasso {
+        background-image: url(../images/logos/ted-lasso.png);
+        height: 60px;
+        background-repeat: no-repeat;
+    }
+    .the-morning {
+        background-image: url('../images/logos/the-morning-show-small.png');
+        margin-left: -30px;
+        width: 70%;
+        justify-self: flex-end;
+        
+    }
+    .the-foundation {
+        margin-left: -30px;
+        background-image: url('../images/mobile/logos/foundation.png');
+    }
+
+    /* //////  FOOTER //////////// */
+
+    .header-footer {
+        max-width: 95%; 
+    }
+
+    .links-footer{
+        margin-top: 16px;
+        flex-direction: column;
+        max-width: 95%;
+
+    }
+    #footer .links-footer div {
+        margin: 0;
+        max-width: 100%;
+        
+    }
+
+    .links-footer ul li{
+        display: none;
+        margin-left: 15px;
+        padding-top: 2px;
+    }
+
+    .links-footer div ul {
+        cursor: pointer;
+        margin-top: 19px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #d2d2d7;
+    }
+
+    .footer-title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .links-footer .footer-title p {
+        color: #1d1d1f;;
+        opacity: 0.8;
+        font-size: 12px;
+    }
+
+    .links-footer div ul.toggle-ul-footer li{
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: 1s;
+    }
+
+    .links-footer div ul.toggle-ul-footer.animation li{
+        transform: translateX(0);
+        opacity: 1;
+        visibility:visible;
+    }
+
+    .toggle-footer {
+        display: inline-block;
+    }
+
+    .header-footer.border {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright p:nth-child(1) {
+        order: 2;
+    }
+
+    .copyright .brasil {
+        order: 1;
+        margin-bottom: 10px;
+        color: #252525;
+    }
+
+    .politicas {
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+    }
+    .politicas p {
+        font-size: 15px;
+    }
+
+}
