@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 27</h1>
+    <h2>Escrever um algoritmo que lê um valor em reais e calcula qual o menor número possível
+        de notas de 100, 50, 10, 5 e 1 em que o valor lido pode ser decomposto. Escrever o valor
+        lido e a relação de notas necessárias</h2>
+    <p>O código ficou dessa forma: <code>
+        let valor = 591; <br>
+        let notas100 = Math.floor(valor / 100); <br>
+        valor = valor - (notas100 * 100); <br>
+        let notas50 = Math.floor(valor / 50); <br>
+        valor = valor - (notas50 * 50); <br>
+        let notas10 = Math.floor(valor / 10); <br>
+        valor = valor - (notas10 * 10); <br>
+        let notas5 = Math.floor(valor / 5); <br>
+        valor = valor - (notas5 * 5); <br>
+        let notas1 = Math.floor(valor / 1); <br>
+        valor = valor - (notas1 * 1); <br>
+
+        console.log(`${notas100} notas de 100, ${notas50} notas de 50, ${notas10} notas de 10, ${notas5} notas de 5, ${notas1} notas de 1`)
+    </code></p>
+ 
+    
+</body>
+</html>

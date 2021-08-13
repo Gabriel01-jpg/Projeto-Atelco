@@ -26,6 +26,65 @@
         triângulo, calcular e escrever a área deste triângulo. Se não formam triângulo escrever os
         valores lidos. ( se a > b + c não formam triângulo algum, se a é o maior).</h2>
     <p>O código ficou dessa forma: <code>
+        const A = 8; <br>
+        const B = 10; <br>
+        const C = 10; <br>
+        let triangulo = 0; <br>
+
+        for(i = 1; i <= 1; i++){ <br>
+            if(Math.trunc(B - C) < A && A < B + C){ <br>
+                triangulo = triangulo + 1; <br>
+            } else { <br>
+                triangulo = 'Não forma' <br>
+                break <br>
+            }
+            if(Math.trunc(A - C) < B && B < A + C){ <br>
+                triangulo = triangulo + 1; <br>
+            } else { <br>
+                triangulo = 'Não forma' <br>
+                break <br>
+            } <br>
+            if(Math.trunc(A - B) < C && C < A + B){ <br>
+                triangulo = triangulo + 1; <br>
+            } else { <br>
+                triangulo = 'Não forma' <br>
+                break <br>
+            } <br>
+        } <br>
+
+        let area; <br>
+        let base; <br>
+        let altura; <br>
+        let lado; <br>
+
+        if(triangulo == 'Não forma'){ <br>
+            console.log(`${A}, ${B}, ${C}, não formam um triângulo`) <br>
+        } else{ <br>
+            if(A == B && B == C){ <br>
+                
+                area = ((A ** 2) * 1.7320508075688772 ) / 4 <br>
+                console.log(area.toFixed(2)) <br>
+            } else if((A == B && B != C) || (B == C && C != A) || (A == C && C != B)){ <br>
+                console.log('Entrou') <br>
+                if(A > B && B == C){ <br>
+                    base = A; <br>
+                    lado =  B <br>
+                } else if(B > A && A == C){ <br>
+                    base = B; <br>
+                    lado = C; <br>
+                } else { <br> 
+                    base = C <br>
+                    lado = A <br>
+                } <br>
+                altura = ((lado ** 2) - ((base / 2) ** 2) ); <br>
+                area = (base * Math.sqrt(altura)) / 2; <br>
+                console.log(area) <br>
+                /* console.log(area) */ <br>
+            } else { <br>
+                
+            } <br>
+        } <br>
+
 
     </code></p>
  

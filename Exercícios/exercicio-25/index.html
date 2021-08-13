@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 25</h1>
+    <h2>Escrever um algoritmo que lê um conjunto de 4 valores i, a, b, c, onde i é um valor
+        inteiro e positivo e a, b, c, são quaisquer valores reais e os escreva. A seguir: <br>
+        a) Se i=1 escrever os três valores a, b, c em ordem crescente. <br>
+        b) Se i=2 escrever os três valores a, b, c em ordem decrescente. <br>
+        c) Se i=3 escrever os três valores a, b, c de forma que o maior entre a, b, c fique dentre os
+        dois.</h2>
+    <p>O código ficou dessa forma: <code>
+        const i = 2; <br>
+
+        let a = 55, b = 24, c = 11; <br>
+
+        if(i == 2){ <br>
+            if(a > b && b > c ){ <br>
+                console.log(a, b, c) <br>
+            }else if(a > b && b < c){ <br>
+                console.log(a, c, b) <br>
+            } else if(a < b && a > c){ <br>
+                console.log(b, a, c) <br>
+            } else if(a < c && b > a){ <br>
+                console.log(c, b, a) <br>
+            } else if(a < c && b < a){ <br>
+                console.log(c, b, a ) <br>
+            } <br>
+        } else if( i == 1){ <br>
+            if(a > b && b > c ){ <br>
+                console.log(c, b, a) <br>
+            }else if(a > b && b < c){  <br>
+                console.log(b, c, a) <br>
+            } else if(a < b && a > c){ <br>
+                console.log(c, a, b) <br>
+            } else if(a < c && b > a){ <br>
+                console.log(c, b, a) <br>
+            } else if(a < c && b < a){ <br>
+                console.log(c, b, a ) <br>
+            }
+        } else if(i == 3){ <br>
+            if(a > b && a > c){ <br>
+                console.log(b, a, c) <br>
+            } else if(b > a && b > c){ <br>
+                console.log(a, b, c) <br>
+            } else if(c > a && c > b){ <br>
+                console.log(a, c, b) <br>
+            }
+        }
+
+    </code></p>
+ 
+    
+</body>
+</html>

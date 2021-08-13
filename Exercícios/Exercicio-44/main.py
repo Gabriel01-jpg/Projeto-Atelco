@@ -1,4 +1,4 @@
-/* 44. A Pense Longe é uma empresa que comercializa planos de previdência privada.
+"""44. A Pense Longe é uma empresa que comercializa planos de previdência privada.
 Ao adquirir um desses planos, o participante deve depositar periodicamente uma
 certa quantidade em dinheiro numa conta especial que, depois de alguns anos, é
 utilizada para financiar sua aposentadoria (imagine, para simplificar, que seja
@@ -20,5 +20,18 @@ participante se aposenta e passa a sacar dinheiro de sua conta). Suponha
 que o usuário saque um único valor anual de R$ 50.000,00 e que a
 rentabilidade sobre o saldo seja a mesma do período de poupança (9%).
 Encerre a listagem desse período após 40 anos ou quando o saldo ficar
-zerado ou negativo. */
+zerado ou negativo. """
 
+
+anosTrabalhados = int(input('Digite quantos anos você ainda vai trabalhar: '))
+valor = float(input('Quanto você conseguira depositar anualmente: '))
+valorFinal = valor
+
+for i in range(1, anosTrabalhados):
+    print(f'{valorFinal} = {valor} + {valorFinal} * 0.09')
+    valorFinal += (valor + valorFinal) * 0.09
+
+print(valorFinal)
+
+"""Fórmula: valor = 40 + 40 * 0.09 = 43,6"""
+"""Fórmula: valor = 40 + 43,6 * 0.09 = 43,6"""

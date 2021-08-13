@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 29</h1>
+    <img src="/Exercícios/exercicio-29/exercicio-29.PNG" alt="ImagemDaQuestao">
+    <p>O código ficou dessa forma: <code>
+        const aluno = { <br>
+            numID: 545121,  <br>
+            notas: [10, 8, 7], <br>
+            mediaExercicios: 10 <br>
+        } <br>
+        
+        let MA = ((aluno.notas[0] + aluno.notas[1] * 2) + (aluno.notas[2] * 3) + aluno.mediaExercicios) / 7 <br>
+        const conceito = MA >= 9 ? 'A' : MA < 9 && MA >= 7.5 ? 'B' : MA < 7.5 && MA >= 6 ? 'C' : MA < 6 && MA >= 4 ? 'D' : 'E' <br>
+        console.log(`ID: ${aluno.numID}, notas: ${aluno.notas[0]}, ${aluno.notas[1]}, ${aluno.notas[2]}, com media de exercícios: ${aluno. <br>mediaExercicios} e aproveitamento: ${MA.toFixed(2)}, conceito: ${conceito}`) <br>
+        if(conceito == 'D' || conceito == 'E'){ <br>
+            console.log('Você foi reprovado'); <br>
+        } else { <br>
+            console.log('Você foi aprovado!') <br>
+        } <br>
+        
+
+    </code></p>
+ 
+    
+</body>
+</html>

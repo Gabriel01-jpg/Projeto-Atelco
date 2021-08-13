@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 39</h1>
+    <h2>Contagem de alturas – Crie um programa que leia continuamente a altura e o
+        sexo de uma lista de pessoas, até que uma altura negativa seja fornecida. Ao final,
+        sabendo que a média de altura para as mulheres brasileiras é de 1.60 m e a dos
+        homens brasileiros é de 1.73 m, escreva as seguintes informações: <br>
+        a) quantas mulheres da lista estão acima da média nacional de altura para
+        mulheres, e quantas estão abaixo; <br>
+        
+        b) quantos homens da lista estão acima da média nacional de altura para <br>
+        homens, e quantos estão abaixo.</h2>
+    <p>O código ficou dessa forma: <code>
+        numeroFornecido = 0  <br>
+        contAlturaMulherB = 0 <br>
+        contAlturaMulherA = 0 <br>
+        contAlturaHomenB = 0 <br>
+        contAlturaHomenA = 0 <br>
+        sexo = 0 <br>
+ <br>
+        while(True): <br>
+            numeroFornecido = float(input('Digite a altura: ')) <br>
+            if(numeroFornecido <= 0): break <br>
+            sexo = input('Digite o sexo: (M) e (F): ') <br>
+            if(sexo.upper() == 'M'): <br>
+                if(numeroFornecido < 1.73 and numeroFornecido > 0): <br>
+                    contAlturaHomenB += 1 <br>
+                elif(numeroFornecido >= 1.73): <br>
+                    contAlturaHomenA += 1 <br>
+            if(sexo.upper() == 'F'): <br>
+                if(numeroFornecido < 1.60 and numeroFornecido > 0): <br>
+                    contAlturaMulherB += 1 <br>
+                elif(numeroFornecido >= 1.60): <br>
+                    contAlturaMulherA += 1 <br>
+        print(f'{contAlturaMulherB} mulher(es) esta(ão) abaixo da média e {contAlturaMulherA} está(ão) acima.') <br>
+        print(f'{contAlturaHomenB} homen(s) está(ão) abaixo da média e {contAlturaHomenA} está(ão) acima.') <br>
+    </code></p>
+ 
+    
+</body>
+</html>

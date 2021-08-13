@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 38</h1>
+    <h2>Somatório e média de uma lista de números – Construa um programa que
+        permita a um usuário informar uma série de números, até que um número negativo
+        seja fornecido. Ao final, imprima o somatório desses números, a média, o valor
+        máximo e o mínimo. Desconsidere o último número informado pelo usuário. </h2>
+    <p>O código ficou dessa forma: <code>
+        numeroFornecido = 0  <br>
+        soma = 0 <br>
+        contador = 0 <br>
+        maior = 0 <br>
+        menor = 999999999999999999999 <br>
+        
+        while(numeroFornecido >= 0): <br>
+            contador += 1 <br>
+            soma += numeroFornecido <br>
+            numeroFornecido = float(input('Digite um número: ')) <br>
+            if(numeroFornecido > maior): <br>
+                maior = numeroFornecido <br>
+            if(numeroFornecido &lt; menor and numeroFornecido &gt;= 0): <br>
+                menor = numeroFornecido <br>
+            
+            
+        
+        print(f'A soma é {soma}, média: {soma / contador}, maior valor fornecido foi: {maior} e o menor {menor} ')
+    </code></p>
+ 
+    
+</body>
+</html>
