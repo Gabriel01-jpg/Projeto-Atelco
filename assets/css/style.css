@@ -26,6 +26,73 @@ a {
     display: none;
 }
 
+.menu-mobile {
+    display: none;
+    gap: 10px;
+}
+
+
+.menu-mobile ul {
+    width: 100%;
+    margin-top: 5px;
+    border-top: 0.5px solid rgba(251, 251, 253, 0.3);
+}
+
+.menu-mobile ul li {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    margin-top: 18px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgba(251, 251, 253, 0.3);
+}
+
+.menu-mobile ul li:nth-child(9) {
+    border-bottom: none
+}
+
+.menu-mobile ul li a {
+    padding: 0;
+    opacity: 1;
+    font-size: 1rem;
+}
+
+.search-mobile {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 35px;
+    outline: none;
+    background-color: #1f1c1c;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+}
+
+.search-mobile input{
+    margin-left: 9px;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.search-mobile i {
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+
+
+
 .content-header{
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
@@ -43,7 +110,7 @@ a {
 }
 
 /* ///////////////// */
-.navigation ul {
+.navigation ul#transition-nav{
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -53,6 +120,12 @@ a {
     height: 43px;
     transition: 2s;
 }
+
+.navigation .mobile ul {
+    height: 43px;
+    align-items: center;
+}
+
 
 .navigation ul a {
     font-size: 14px;
@@ -802,7 +875,7 @@ sup {
 }
 
 @media (max-width: 620px) {
-    #transition-nav, .search{
+    .navigation ul#transition-nav, .search{
         display: none;
     }
 
@@ -856,6 +929,26 @@ sup {
         opacity: 0;
         transform: translateY(30px);
         transition: 2s;
+    }
+
+    .menu-mobile{
+        display: grid;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-50px);
+        transition: 0.5s;
+    }
+    .navigation.show .menu-mobile{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transition: 0.5s;
+    }
+    .navigation.show-fixed-back .menu-mobile{
+        opacity: 0;
+        visibility: visible;
+        transform: translateY(-20px);
+        transition: 0.5s;
     }
 
     /* .navigation.show ul#transition-nav {
