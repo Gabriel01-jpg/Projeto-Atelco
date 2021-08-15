@@ -32,10 +32,13 @@ a {
 }
 
 
-.menu-mobile ul {
+.navigation .menu-mobile ul {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: 5px;
     border-top: 0.5px solid rgba(251, 251, 253, 0.3);
+    margin: 0;
 }
 
 .menu-mobile ul li {
@@ -110,7 +113,7 @@ a {
 }
 
 /* ///////////////// */
-.navigation ul#transition-nav{
+.navigation ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -1003,7 +1006,7 @@ sup {
         background-size: 734px 548px;
         background-position: center;
         background-repeat: no-repeat;
-        height: 100%;
+        /* height: 100%; */
         top: -75px;
 
     }
