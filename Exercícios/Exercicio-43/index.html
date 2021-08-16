@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 01</title>
+    <style>
+        code {
+            background-color: #d9d9d9;
+            border-radius: 3px;
+            font-family: courier, monospace;
+            padding: 0 15px;
+            width: 600px;
+            display: block;
+        }
+        p {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 43</h1>
+    <h2>A empresa de leilões Arremate Certo disponibiliza seu site para que qualquer
+        pessoa possa vender seus produtos on line. Para que nenhum produto fique
+        encalhado, ele só pode ser anunciado durante 6 semanas. Nesse período, seu preço
+        cai 5% por semana, até que uma venda seja concretizada. Por exemplo, um
+        produto que esteja sendo vendido por R$ 100.00 na primeira semana passa a custar
+        R$ 100 x 0.95 = R$ 95.00 na segunda semana e R$ 95,00 x 0.95 = R$ 90.25 na
+        terceira semana. Construa um programa onde o usuário informe o valor do preço
+        de um item e o computador escreva a como esse valor evolui ao longo das 6
+        semanas. Depois, modifique esse programa para que ele continue fazendo
+        
+        simulações com o preço de vários produtos, até que um valor sentinela
+        especificado por você seja fornecido como preço.</h2>
+    <p>O código ficou dessa forma: <code>
+        const valorProdutoInicial = 100;  <br>
+        let descontoPreco = valorProdutoInicial * 0.05; <br>
+        let valorProduto = valorProdutoInicial; <br>
+        console.log(`Valor inicial do produto: ${valorProdutoInicial}`) <br>
+        for(i = 1; i <= 6; i++){ <br>
+            valorProduto -= descontoPreco; <br>
+            descontoPreco = valorProduto * 0.05; <br>
+            console.log(`${i}º semana = ${valorProduto.toFixed(2)}`) <br>
+        }
+    </code></p>
+ 
+    
+</body>
+</html>
