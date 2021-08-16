@@ -28,8 +28,8 @@ valor = float(input('Quanto você conseguira depositar anualmente: '))
 valorFinal = valor
 
 for i in range(1, anosTrabalhados):
-    print(f'{valorFinal} = {valor} + {valorFinal} * 0.09')
-    valorFinal += (valor + valorFinal) * 0.09
+    print(f'{valorFinal} = {valor} + ({valorFinal} * 0.09)')
+    valorFinal += valor + (valorFinal * 0.09) 
 
 print(valorFinal)
 

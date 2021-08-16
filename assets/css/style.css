@@ -38,7 +38,7 @@ a {
     width: 100%;
     margin-top: 5px;
     border-top: 0.5px solid rgba(251, 251, 253, 0.3);
-    margin: 0g;
+    margin: 0;
 }
 
 .menu-mobile ul li {
@@ -875,6 +875,18 @@ sup {
         background-size: 1262px 580px;
     }
 
+    .logos {
+        gap: 45px;
+    }
+
+    .logos div.the-foundation {
+        width: 100%;
+    }
+
+    .logos div {
+        width: 60%;
+    }
+
 }
 
 @media (max-width: 620px) {
@@ -945,13 +957,13 @@ sup {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
-        transition: 0.5s;
+        transition: 2s;
     }
     .navigation.show-fixed-back .menu-mobile{
         opacity: 0;
         visibility: visible;
         transform: translateY(-20px);
-        transition: 0.5s;
+        transition: 0.2s;
     }
 
     /* .navigation.show ul#transition-nav {
